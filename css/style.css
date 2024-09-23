@@ -418,6 +418,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
+    border: #2196f3;
     }
   }
   
@@ -496,7 +497,8 @@
   .footer-box {
     display: flex;
     gap: 70px;
-    align-items: center;
+    /* align-items: center; */
+    align-items: baseline;
   }
   
   .footer-logo {
@@ -551,10 +553,10 @@
     letter-spacing: 0.42px;
   }
   
-  .foot-box {
+  /* .foot-box {
     padding-top: 12px;
     padding-bottom: 40px;
-  }
+  } */
   
   .foot-title {
     color: var(--studio-color);
@@ -600,7 +602,7 @@
     
     display: flex;
     gap: 12px;
-    margin-left: 93px;
+    /* margin-left: 93px; */
     padding-bottom: 19px;
   }
   
