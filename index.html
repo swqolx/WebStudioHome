@@ -17,16 +17,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container box">
+      <div class="container box" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom">
         <a class="header-logo" href="/index.html"
           ><span class="header-web">Web</span>Studio</a
         >
         <nav class="header-nav">
-          <ul class="nav-list">
+          <ul class="nav-list" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
             <li class="nav-link">
               <a class="nav-item current" href="./index.html">Студія</a>
             </li>
@@ -36,7 +39,8 @@
             <li class="nav-link"><a class="nav-item" href="#">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="header-list">
+        <ul class="header-list" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
           <li class="header-link">
             <a class="header-item" href="mailto:info@devstudio.com">
               <svg class="header-icon head-svg">
@@ -61,8 +65,8 @@
       <!-- Ефективні рішення для вашого бізнес-->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button" data-modal-open>
+          <h1 class="hero-title" data-aos="fade-up">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero-button" data-modal-open data-aos="fade-up">
             Замовити послугу
           </button>
         </div>
@@ -70,7 +74,8 @@
       <!-- наші переваги -->
       <section class="advantages">
         <div class="container">
-          <ul class="advantages-list">
+          <ul class="advantages-list" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
             <li class="advantages-item">
               <h2 class="advantages-title">УВАГА ДО ДЕТАЛЕЙ</h2>
               <p class="advantages-text">
@@ -597,5 +602,9 @@
       </div>
     </div>
     <script src="./js/modaljs"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>0
   </body>
 </html>
