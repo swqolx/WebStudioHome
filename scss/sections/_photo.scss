@@ -1,0 +1,121 @@
+.photo {
+    background-color: var(--affairs-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .phooto-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .photo-box{
+  overflow: hidden;
+  }
+  .photo-btn {
+    color: var(--text-color);
+    background-color: var(--comand-color);
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    padding: 6px 22px;
+  }
+  .box-icon{
+  position: relative;
+  overflow: hidden;
+  }
+  .photo-btn:hover,
+  .photo-btn:focus {
+    background-color: var(--web-color);
+    border: 0;
+    border-radius: 4px;
+    color: var(--studio-color);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  }
+  
+  .photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .photo-link {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .photo-link:focus .photo-link:hover {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+      .overlay {
+        opacity: 1;
+        transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+      }
+      
+  }
+  
+  
+  
+  .photo-img {
+    width: 100%;
+  }
+  .box-icon:hover .overlay{
+    opacity: 1;
+    
+    transform: translate(0) ;
+    transition: transform 250ms;
+    transition-delay: 0;
+  
+  }
+  .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 294px;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.90);
+  opacity: 0;
+  transform: translateY(100%);
+  transition-property: transform background-color;
+  transition-duration: 2500ms;
+  transition-delay: 0;
+  }
+  
+  .over-text {
+    color: var(--additional-form);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.54px;
+  width: 322px;
+  }
+  
+  .photo-box {
+    border: 1px solid var(--border-color);
+    background-color: var(--studio-color);
+    padding: 20px 24px;
+  
+  }
+  
+  .photo-title {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+  
+  }
+  
+  .photo-text {
+    color: var(--accent-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+    margin-top: 4px;
+   
+  }

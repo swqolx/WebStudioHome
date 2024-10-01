@@ -1,0 +1,36 @@
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+     background-image: linear-gradient( rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/fons.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+  }
+  
+  
+  .hero-title {
+    color: var(--studio-color);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    text-transform: uppercase;
+    width: 696px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+  
+  
+  .hero-button {
+    color: var(--studio-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87; 
+  letter-spacing: 0.96px;
+  background-color: var(--web-color);
+  padding: 10px 32px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
