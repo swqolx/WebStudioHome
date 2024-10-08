@@ -17,22 +17,22 @@
   width: 270px;
   height: 120px;
   display: block;
-  background-image: url(../images/antenna.png);
+  background-image: url(/images/antenna.png);
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
   }
   
   .advantages-item:nth-child(2)::before {
-    background-image: url(../images/clock.png);
+    background-image: url(/images/clock.png);
   }
   
   .advantages-item:nth-child(3)::before {
-  background-image: url(../images/diagram.png);
+  background-image: url(/images/diagram.png);
   }
   
   .advantages-item:nth-child(4)::before {
-  background-image: url(../images/astronaut.png);
+  background-image: url(/images/astronaut.png);
   }
   
   .advantages-title {
