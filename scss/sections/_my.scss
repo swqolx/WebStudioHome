@@ -2,18 +2,17 @@
     background-color: var(--affairs-color);
     padding-top: 94px;
     padding-bottom: 94px;
-  }
-  
-  .affairs-list {
+
+    &__list {
       display: flex;
       gap: 30px;
   }
   
-  .affairs-item {
+  &__item {
     position: relative;
   }
   
-  .affairs-title {
+  &__title {
     color: var(--text-color);
     font-size: 36px;
     font-weight: 700;
@@ -22,11 +21,11 @@
     margin-bottom: 50px;
   }
   
-  .affairs-img {
+  &__img {
     width: 370px;
   }
   
-  .affairs-box {
+  &__box {
     width: 370px;
    height: 70px;
    display: flex;
@@ -38,7 +37,7 @@
   
   }
   
-  .affairs-text {
+  &__text {
     color: var(--studio-color);
   font-size: 14px;
   font-weight: 700;
@@ -46,3 +45,6 @@
   letter-spacing: 0.42px;
   text-transform: uppercase;
   }
+  }
+  
+  
