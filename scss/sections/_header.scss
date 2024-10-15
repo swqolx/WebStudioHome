@@ -1,10 +1,10 @@
 .header {
-  background-color: var(--affairs-color);
+  background-color: $affairs-color;
   padding-top: 24px;
   padding-bottom: 25px;
   
   &__logo {
-    color: var(--studio1-color);
+    color: $studio1-color;
     font-family: "Raleway";
     font-size: 26px;
     font-weight: 700;
@@ -14,7 +14,7 @@
   }
 
   &__web {
-    color: var(--web-color);
+    color: $web-color;
     font-family: "Raleway";
     font-size: 26px;
     font-weight: 700;
@@ -31,7 +31,7 @@
   }
   
   &__item {
-    color: var(--text-color);
+    color: $text-color;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -39,7 +39,7 @@
   }
   &__item:hover,
   &__item:focus {
-    color: var(--web-color);
+    color: $web-color;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -52,14 +52,14 @@
   &__icon {
     width: 10px;
     height: 16px;
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
   &__svg {
     width: 16px;
     height: 12px;
   }
   &__item2 {
-    color: var(--accent-color);
+    color: $accent-color;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -74,9 +74,9 @@
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transition-delay: 0;
-      color: var(--web-color);
+      color: $web-color;
       .header__icon {
-        fill: var(--web-color);
+        fill: $web-color;
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

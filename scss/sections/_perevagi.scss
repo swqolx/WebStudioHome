@@ -1,5 +1,5 @@
 .advantages {
-    background-color: var(--affairs-color);
+    background-color: $affairs-color;
     padding-top: 94px;
   
    &__list {
@@ -11,7 +11,7 @@
   &__item::before {
     content: "";
     border-radius: 4px;
-    background: var(--comand-color);
+    background: $comand-color;
     width: 270px;
     height: 120px;
     display: block;
@@ -37,7 +37,7 @@
    
     
     &__title {
-      color: var(--text-color);
+      color: $text-color;
       font-size: 14px;
       font-weight: 700;
       line-height: 1.14;
@@ -46,7 +46,7 @@
     }
     
     &__text {
-      color: var(--accent-color);
+      color: $accent-color;
       font-size: 14px;
       font-weight: 400;
       line-height: 1.71;
