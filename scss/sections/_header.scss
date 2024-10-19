@@ -4,10 +4,7 @@
   padding-bottom: 25px;
   
   &__logo {
-    color: $studio1-color;
-    font-family: "Raleway";
-    font-size: 26px;
-    font-weight: 700;
+    @include logo-a($studio1-color);
     line-height: 1.38;
     margin-right: 93px;
     width: 145px;

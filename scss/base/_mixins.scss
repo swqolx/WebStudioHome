@@ -1,0 +1,17 @@
+
+@mixin style-button {
+    letter-spacing: 0.96px;
+    background-color: $web-color;
+    color: $studio-color;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px  $foot-color;
+}
+@mixin logo-a($colir){
+    color: $colir;
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+}

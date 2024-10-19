@@ -146,7 +146,7 @@
     line-height: 1.7;
     letter-spacing: 0.42px;
   }
-  
+
   &__check-link {
     color: $web-color;
     font-size: 14px;
@@ -156,18 +156,11 @@
     text-decoration-line: underline;
     margin-left: 3px;
   }
-  
+
   &__check-btn {
-    color: $studio-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
     line-height: 1.8;
-    letter-spacing: 0.96px;
     padding: 10px 53px;
-    border-radius: 4px;
-    background: $web-color;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    @include style-button;
   }
 }
 
@@ -175,8 +168,6 @@
   width: 18px;
   height: 18px;
 }
-
-
 
 .btn {
   text-align: center;

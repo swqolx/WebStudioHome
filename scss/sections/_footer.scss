@@ -11,10 +11,7 @@
     }
     
     &__logo {
-      color: $studio-color;
-      font-family: "Raleway";
-      font-size: 26px;
-      font-weight: 700;
+     @include logo-a($studio-color);
       line-height: 1.38;
       letter-spacing: 0.78px;
     }
