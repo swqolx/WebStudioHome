@@ -608,16 +608,16 @@ body {
   background-repeat: no-repeat;
 }
 .advantages__item:first-child::before {
-  background-image: url(/images/antenna.png);
+  background-image: url(../images/antenna.png);
 }
 .advantages__item:nth-child(2)::before {
-  background-image: url(/images/clock.png);
+  background-image: url(../images/clock.png);
 }
 .advantages__item:nth-child(3)::before {
-  background-image: url(/images/diagram.png);
+  background-image: url(./images/diagram.png);
 }
 .advantages__item:last-child::before {
-  background-image: url(/images/astronaut.png);
+  background-image: url(./images/astronaut.png);
 }
 .advantages__title {
   color: #212121;
