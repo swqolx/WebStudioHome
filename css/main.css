@@ -598,23 +598,25 @@ body {
 }
 .advantages__item::before {
   content: "";
-  border-radius: 4px;
-  background: rgb(245, 244, 250);
+  margin-bottom: 30px;
+  display: block;
   width: 270px;
   height: 120px;
-  display: block;
-  background-image: url(/images/antenna.png);
-  background-repeat: no-repeat;
+  border-radius: 4px;
+  background: rgb(245, 244, 250);
   background-position: center;
-  margin-bottom: 30px;
+  background-repeat: no-repeat;
 }
-.advantages__item::before:nth-child(2)::before {
+.advantages__item:first-child::before {
+  background-image: url(/images/antenna.png);
+}
+.advantages__item:nth-child(2)::before {
   background-image: url(/images/clock.png);
 }
-.advantages__item::before:nth-child(3)::before {
+.advantages__item:nth-child(3)::before {
   background-image: url(/images/diagram.png);
 }
-.advantages__item::before:nth-child(4)::before {
+.advantages__item:last-child::before {
   background-image: url(/images/astronaut.png);
 }
 .advantages__title {
