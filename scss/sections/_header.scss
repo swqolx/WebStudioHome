@@ -95,16 +95,17 @@
 }
 
 .current {
+  
   color: $web-color;
 }
-.current:hover::after,
-.current:focus::after {
+&:hover::after,
+&:focus::after {
   display: block;
   content: "";
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background: $web-color;
+  // background: $web-color;
   position: absolute;
   top: 48px;
   left: 0px;
@@ -119,5 +120,5 @@
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
-  /* outline: 1px solid red ; */
+  
 }
