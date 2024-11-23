@@ -1,5 +1,5 @@
 
-@mixin style-button {
+@mixin style-button() {
     letter-spacing: 0.96px;
     background-color: $web-color;
     color: $studio-color;
