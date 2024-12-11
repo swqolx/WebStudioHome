@@ -231,16 +231,6 @@ body {
   margin: 0 auto;
   outline: 1px solid red;
 }
-@media screen and (min-width: 768px) {
-  .container {
-    padding: 21px 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    padding: 25px 0;
-  }
-}
 
 .box {
   display: flex;
@@ -252,24 +242,6 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
 }
-@media screen and (min-width: 480px) {
-  .header {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-}
 .header__logo {
   color: #000;
   font-family: "Raleway";
@@ -279,27 +251,6 @@ body {
   margin-right: 93px;
   width: 145px;
 }
-@media screen and (min-width: 480px) {
-  .header__logo {
-    font-size: 24px;
-    letter-spacing: 0.72px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header__logo {
-    font-size: 24px;
-    margin-right: 88px;
-    letter-spacing: 0.72px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__logo {
-    font-size: 26px;
-    letter-spacing: 0.78px;
-    margin-right: 93px;
-    letter-spacing: 0.78px;
-  }
-}
 .header__web {
   color: #2196f3;
   font-family: "Raleway";
@@ -308,8 +259,21 @@ body {
   line-height: 1.38;
 }
 .header__list {
-  display: flex;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__list {
+    gap: 30px;
+    flex-direction: row;
+  }
 }
 .header__link {
   position: relative;
@@ -325,9 +289,21 @@ body {
   transition-delay: 0;
 }
 .header__list2 {
-  display: flex;
-  gap: 30px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__list2 {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__list2 {
+    gap: 30px;
+    flex-direction: row;
+  }
 }
 .header__icon {
   width: 10px;
