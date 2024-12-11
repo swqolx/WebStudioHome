@@ -231,6 +231,16 @@ body {
   margin: 0 auto;
   outline: 1px solid red;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 21px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 25px 0;
+  }
+}
 
 .box {
   display: flex;

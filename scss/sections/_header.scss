@@ -4,7 +4,13 @@
   padding-left: 15px;
   margin: 0 auto;
   outline: 1px solid red;
- 
+  @media screen and (min-width: 768px) {
+    padding: 21px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 25px 0;
+  }
 }
 
 .box {
