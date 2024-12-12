@@ -1,31 +1,51 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
+padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../../images/fons.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
+  overflow: hidden;
 
+@media screen and (min-width: 1200px){
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+}
   &__title {
     color: $studio-color;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
+    font-size: 26px;
+    font-weight:900 ;
+    line-height: 1.16;
+    letter-spacing: 1.56;
     text-transform: uppercase;
-    width: 696px;
+    width: 360px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 1200px){
+      font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 2.64;
+    width: 696px;
+    }
   }
 
   &__button {
     line-height: 1.87;
-    padding: 10px 32px;
+    padding: 10px 24px;
     border: 0;
     @include style-button();
+
+    @media screen and (min-width: 1200px) {
+      padding: 10px 32px;
+    }
   }
 }

@@ -1,32 +1,49 @@
 .customers {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px){
+      padding: 94px 0px;
+      
+    }
 
     &__list {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 30px;
+      flex-wrap: wrap;
     }
     
     &__title {
       color: $text-color;
     text-align: center;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 1.16;
-    letter-spacing: 1.08px;
+    letter-spacing: 0.84px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px){
+      font-size: 36px;
+      letter-spacing: 1.08px;
     margin-bottom: 50px;
+    }
     }
     
     &__link {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 170px;
+      width: 210px;
     height: 92px;
       border-radius: 4px;
-    border: 1px solid $svg-color;
+    outline: 1px solid $svg-color;
+
+    @media screen and (min-width: 768px){
+     width: 226px; 
+    }
+    @media screen and (min-width: 1200px){
+      width: 170px; ;
+    }
     }
     
     &__link:hover, &__link:focus {
@@ -51,7 +68,16 @@
     height: 60px;
     fill: $svg-color;
     }
-    
+    // &__item{
+    //   flex-basis: calc((100% - 30px) / 2);
+
+    //   @media screen and (min-width: 768px){
+    //     flex-basis: calc((100% - 60px) / 3);
+    //    }
+    //    @media screen and (min-width: 1200px){
+    //     flex-basis: calc((100% - 150px) / 6);
+    //    }
+    // }
   }
   
   

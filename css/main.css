@@ -37,34 +37,52 @@ body {
 }
 
 .header__item2, .header__item {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/fons.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
+  overflow: hidden;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero__title {
   color: #fff;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.16;
+  letter-spacing: 1.56;
   text-transform: uppercase;
-  width: 696px;
+  width: 360px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 2.64;
+    width: 696px;
+  }
+}
 .hero__button {
   line-height: 1.87;
-  padding: 10px 32px;
+  padding: 10px 24px;
   border: 0;
   letter-spacing: 0.96px;
   background-color: #2196f3;
@@ -75,6 +93,11 @@ body {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.1);
 }
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    padding: 10px 32px;
+  }
+}
 
 .footer {
   background-color: #2f303a;
@@ -83,12 +106,18 @@ body {
 }
 .footer__box {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
+  justify-content: center;
+  gap: 60px;
+}
+.footer__wraper {
+  text-align: center;
 }
 .footer__logo {
   color: #fff;
   font-family: "Raleway";
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;
@@ -109,7 +138,6 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
-  letter-spacing: 0.42px;
 }
 .footer__adress {
   margin-top: 20px;
@@ -187,6 +215,7 @@ body {
 .foot__box {
   margin-left: 70px;
   margin-right: auto;
+  text-align: center;
 }
 .foot__title {
   color: #fff;
@@ -224,22 +253,16 @@ body {
   height: 20px;
 }
 
+.div-form {
+  text-align: center;
+}
+
 .container {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
   outline: 1px solid red;
-}
-@media screen and (min-width: 768px) {
-  .container {
-    padding: 21px 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    padding: 25px 0;
-  }
 }
 
 .box {
@@ -249,17 +272,48 @@ body {
 
 .header {
   background-color: #ffffff;
-  padding-top: 24px;
+  padding: 16px 0px;
   padding-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 21px 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 25px 0px;
+  }
 }
 .header__logo {
   color: #000;
   font-family: "Raleway";
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.38;
-  margin-right: 93px;
+  margin-right: auto;
   width: 145px;
+  letter-spacing: 0.72;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    font-size: 26px;
+    letter-spacing: 0.78;
+    margin-right: 93px;
+  }
+}
+.header__nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__nav {
+    display: flex;
+  }
 }
 .header__web {
   color: #2196f3;
@@ -269,21 +323,9 @@ body {
   line-height: 1.38;
 }
 .header__list {
-  display: none;
-  flex-direction: column;
-  gap: 10px;
+  display: flex;
+  gap: 50px;
   margin-left: auto;
-}
-@media screen and (min-width: 768px) {
-  .header__list {
-    display: flex;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__list {
-    gap: 30px;
-    flex-direction: row;
-  }
 }
 .header__link {
   position: relative;
@@ -300,9 +342,9 @@ body {
 }
 .header__list2 {
   display: none;
-  flex-direction: column;
   gap: 10px;
   margin-left: auto;
+  flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .header__list2 {
@@ -329,6 +371,11 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header__item2 {
+    font-size: 14px;
+  }
 }
 .header__item2:hover, .header__item2:focus {
   transition-property: color;
@@ -379,32 +426,55 @@ body {
 }
 
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding: 94px 0px;
+  }
 }
 .customers__list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .customers__title {
   color: #212121;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.16;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
+  letter-spacing: 0.84px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .customers__title {
+    font-size: 36px;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+  }
 }
 .customers__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border-radius: 4px;
-  border: 1px solid #afb1b8;
+  outline: 1px solid #afb1b8;
+}
+@media screen and (min-width: 768px) {
+  .customers__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__link {
+    width: 170px;
+  }
 }
 .customers__link:hover, .customers__link:focus {
   border-color: #2196f3;
@@ -594,6 +664,12 @@ body {
   background-color: #ffffff;
   padding-top: 94px;
   padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .affairs {
+    display: block;
+  }
 }
 .affairs__list {
   display: flex;
@@ -634,22 +710,40 @@ body {
 
 .advantages {
   background-color: #ffffff;
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 94px;
+    padding-bottom: 0px;
+  }
 }
 .advantages__list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .advantages__item::before {
   content: "";
   margin-bottom: 30px;
   display: block;
-  width: 270px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
   background: rgb(245, 244, 250);
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .advantages__item::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__item::before {
+    width: 270px;
+  }
 }
 .advantages__item:first-child::before {
   background-image: url(../../images/antenna.png);
@@ -664,19 +758,36 @@ body {
   background-image: url(../../images/astronaut.png);
 }
 .advantages__title {
+  text-align: center;
   color: #212121;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
+  letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 480px) {
+  .advantages__title {
+    text-align: start;
+  }
 }
 .advantages__text {
   color: #757575;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
-  width: 270px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .advantages__text {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__text {
+    width: 270px;
+  }
 }
 
 .photo {
@@ -788,18 +899,36 @@ body {
 
 .comand {
   background-color: rgb(245, 244, 250);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .comand {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .comand__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   max-width: 1200px;
 }
 .comand__item {
+  flex-basis: 100%;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .comand__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comand__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 .comand__box {
   border-radius: 0px 0px 4px 4px;
@@ -815,9 +944,16 @@ body {
   color: #212121;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.16;
-  margin-bottom: 50px;
-  letter-spacing: 1.08px;
+  line-height: 1.17;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .comand__title {
+    line-height: 1.16;
+    font-size: 36px;
+    margin-bottom: 50px;
+    letter-spacing: 1.08px;
+  }
 }
 .comand__description {
   color: #212121;
