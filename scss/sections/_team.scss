@@ -1,116 +1,229 @@
-.comand {
-    background-color: $comand-color;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    text-align: center;
-    @media screen and (min-width: 1200px) {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
+// .comand {
+//     background-color: $comand-color;
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     text-align: center;
+//     @media screen and (min-width: 1200px) {
+//       padding-top: 94px;
+//       padding-bottom: 94px;
+//     }
 
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      max-width: 1200px;
-  }
+//     &__list {
+//       display: flex;
+//       flex-wrap: wrap;
+//       gap: 30px;
+//       max-width: 1200px;
+//   }
   
-  &__item {
-    flex-basis: 100%;
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+//   &__item {
+//     flex-basis: 100%;
+//     border-radius: 0px 0px 4px 4px;
+//     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 
-    @media screen and (min-width: 768px){
-      flex-basis: calc((100% - 30px) / 2);
-    }
-    @media screen and (min-width: 1200px){
-      flex-basis: calc((100% - 90px) / 4);
-    }
-  }
+//     @media screen and (min-width: 768px){
+//       flex-basis: calc((100% - 30px) / 2);
+//     }
+//     @media screen and (min-width: 1200px){
+//       flex-basis: calc((100% - 90px) / 4);
+//     }
+//   }
   
-  &__box {
-    border-radius: 0px 0px 4px 4px;
-  background: $studio-color;
-   width: 270px;
-   padding-top: 30px;
-   padding-bottom: 30px;
-  }
+//   &__box {
+//     border-radius: 0px 0px 4px 4px;
+//   background: $studio-color;
+//    width: 270px;
+//    padding-top: 30px;
+//    padding-bottom: 30px;
+//   }
   
-  &__img{
-    width: 270px;
-  }
+//   &__img{
+//     width: 270px;
+//   }
   
+//   &__title {
+//     color: $text-color;
+//     font-size: 36px;
+//     font-weight: 700;
+//     line-height: 1.17;
+//     margin-bottom: 30px;
+
+//     @media screen and (min-width: 1200px){
+//       line-height: 1.16;
+//       font-size: 36px;
+//     margin-bottom: 50px;
+//     letter-spacing: 1.08px
+//     }
+//   }
+  
+//   &__description {
+//     color: $text-color;
+//     font-size: 16px;
+//     font-weight: 500; 
+//     line-height: 1.18;
+//   }
+  
+//   &__text {
+//     color: $accent-color;
+//     font-size: 16px;
+//     font-weight: 400;
+//     line-height: 1.18;
+//     margin-top: 10px;
+//     margin-bottom: 16px;
+//   }
+//   &__svg-list {
+//     display: flex;
+//     gap: 10px;
+//     justify-content: center;
+//     align-items: center;
+//   }
+  
+  
+//   &__svg-item {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 12px;
+//   }
+  
+//   &__svg-item:hover,
+//    &__svg-item:focus {
+//     border-radius: 50%;
+//     background-color: $web-color;
+//     transition-property: background-color ;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     transition-delay: 0;
+//     &__icon-comand {
+//       fill: $affairs-color;
+//       transition-property: fill ;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     transition-delay: 0;
+//     border: #2196f3;
+//     }
+//   }
+  
+//   &__icon-comand {
+//     width: 20px;
+//     height: 20px;
+//     fill: $svg-color;
+//   }
+//   }
+  
+  
+  
+  
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  background-color: #F5F4FA;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   &__title {
     color: $text-color;
+    text-align: center;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.17;
+    letter-spacing: 0.84px;
     margin-bottom: 30px;
 
-    @media screen and (min-width: 1200px){
-      line-height: 1.16;
+    @media screen and (min-width: 1200px) {
       font-size: 36px;
-    margin-bottom: 50px;
-    letter-spacing: 1.08px
+      letter-spacing: 1.08px;
+      line-height: 1.16;
+      margin-bottom: 50px;
     }
   }
-  
-  &__description {
-    color: $text-color;
-    font-size: 16px;
-    font-weight: 500; 
-    line-height: 1.18;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
-  
-  &__text {
-    color: $accent-color;
+
+  &__item {
+    flex-basis: 100%;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 90px) / 4);
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__wrap {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__name {
+    color: $text-color;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.48px;
+    margin-bottom: 10px;
+  }
+
+  &__taxt {
+    color: black;
+    text-align: center;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.18;
-    margin-top: 10px;
+    letter-spacing: 0.48px;
     margin-bottom: 16px;
   }
-  &__svg-list {
+
+  &__items {
     display: flex;
+    justify-content: center;
     gap: 10px;
-    justify-content: center;
-    align-items: center;
   }
-  
-  
-  &__svg-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px;
-  }
-  
-  &__svg-item:hover,
-   &__svg-item:focus {
+
+  &__link {
+    padding: 12px 12px;
     border-radius: 50%;
-    background-color: $web-color;
-    transition-property: background-color ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
-    &__icon-comand {
-      fill: $affairs-color;
-      transition-property: fill ;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
-    border: #2196f3;
+
+    &:hover,
+    &:focus {
+      border: none;
+      background-color: $web-color;
+      outline: 0px solid $accent-color;
+
+      .team__icon {
+        fill: $comand-color;
+      }
     }
   }
-  
-  &__icon-comand {
+
+  &__icon {
     width: 20px;
     height: 20px;
-    fill: $svg-color;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  }
-  
-  
-  
-  
-  
+}
