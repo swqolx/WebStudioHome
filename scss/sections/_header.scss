@@ -30,6 +30,21 @@
       margin-right: 93px;
     }
   }
+
+  &__button{
+border: none;
+background-color: transparent;
+@media screen and (min-width: 768px){
+  display: none;
+}
+  }
+
+  &__menu{
+    width:40px ;
+    height:40px ;
+    fill: $studio1-color;
+  }
+
 &__nav{
   display: none;
   @media screen and (min-width: 768px){
@@ -122,9 +137,77 @@
 
 }
 
+.menu{
+background-color: $studio-color;
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+padding: 48px 0px 48px 40px;
+opacity: 1;
+z-index: 1;
 
+&__button{
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+&__close{
+  width: 40px;
+  height: 40px;
+  fill: $studio1-color;
 
+}
 
+&__item:first-child{
+ margin-bottom: 36px;
+}
+
+&__item:nth-child(2){
+  margin-bottom: 32px;
+}
+
+&__link{
+  color: $text-color;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.8px;
+}
+
+&__link:hover{
+  color: $web-color;
+}
+&__list-contact{
+  margin-top: 200px;
+}
+
+&__link-contact:last-child{
+  color: $accent-color;
+font-size: 24px;
+font-weight: 500;
+line-height: 1.16;
+letter-spacing: 0.48px;
+}
+&__item-contact:first-child{
+  margin-bottom: 32px;
+  &__link-contact{
+    color: $web-color;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.68px;
+  }
+}
+}
+
+.is-hidden{
+  pointer-events: none;
+  opacity: 0;
+}
 
 .current {
   color: $web-color;

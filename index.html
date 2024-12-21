@@ -27,6 +27,11 @@
         <a class="header__logo" href="./index.html"
           ><span class="header__web">Web</span>Studio</a
         >
+        <button data-modal-header-open class="header__button" type="button">
+<svg class="header__menu">
+  <use href="./images/symbol-defs.svg#icon-menu"></use>
+</svg>
+        </button>
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__link">
@@ -52,6 +57,28 @@
             </svg> <span class="header__span"> +38 096 111 11 11</span></a>
           </li>
         </ul>
+        <div data-header-modal class="menu is-hidden">
+<button data-modal-header-close class="menu__button" type="button">
+  <svg class="menu__close">
+    <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+  </svg>
+</button>
+<ul class="menu__list">
+  <li class="menu__item"><a href="./images/" class="menu__link">Студія</a></li>
+  <li class="menu__item"><a href="./pages/portfolio.html" class="menu__link">Портфоліо</a></li>
+  <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+</ul>
+<ul class="menu__list-contact">
+  <li class="menu__item-contact"><a href="tell:+380961111111" class="menu__link-contact">+38 096 111 11 11</a></li>
+  <li class="menu__item-contact"><a href="mailto:info@devstudio.com" class="menu__link-contact">info@devstudio.com</a></li>
+</ul>
+<ul class="menu__list-social">
+  <li class="menu__item-social"><a href="#" class="menu__link-social">instagram</a></li>
+  <li class="menu__item-social"><a href="#" class="menu__link-social">Twitter</a></li>
+  <li class="menu__item-social"><a href="#" class="menu__link-social">Facebook</a></li>
+  <li class="menu__item-social"><a href="#" class="menu__link-social">LinkeIn</a></li>
+</ul>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -494,6 +521,7 @@
       </div>
     </div> -->
     <script src="./js/modaljs"></script>
+    <script src="./js/menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

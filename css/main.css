@@ -368,6 +368,20 @@ body {
     margin-right: 93px;
   }
 }
+.header__button {
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
+}
+.header__menu {
+  width: 40px;
+  height: 40px;
+  fill: #000;
+}
 .header__nav {
   display: none;
 }
@@ -454,6 +468,71 @@ body {
 }
 .header__item2:last-child {
   margin-right: 0px;
+}
+
+.menu {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+  padding: 48px 0px 48px 40px;
+  opacity: 1;
+  z-index: 1;
+}
+.menu__button {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.menu__close {
+  width: 40px;
+  height: 40px;
+  fill: #000;
+}
+.menu__item:first-child {
+  margin-bottom: 36px;
+}
+.menu__item:nth-child(2) {
+  margin-bottom: 32px;
+}
+.menu__link {
+  color: #212121;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.8px;
+}
+.menu__link:hover {
+  color: #2196f3;
+}
+.menu__list-contact {
+  margin-top: 200px;
+}
+.menu__link-contact:last-child {
+  color: #757575;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 0.48px;
+}
+.menu__item-contact:first-child {
+  margin-bottom: 32px;
+}
+.menu__item-contact:first-child__link-contact {
+  color: #2196f3;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.68px;
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
 }
 
 .current {
@@ -719,23 +798,23 @@ body {
   font-weight: 700;
   line-height: 2;
 }
-.photo__title__text {
+.photo__text {
   color: #757575;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.87;
   margin-top: 4px;
 }
-.photo__title__list {
+.photo__list {
   display: flex;
   gap: 8px;
   justify-content: center;
   margin-bottom: 50px;
 }
-.photo__title__box {
+.photo__box {
   overflow: hidden;
 }
-.photo__title__btn {
+.photo__btn {
   color: #212121;
   background-color: rgb(245, 244, 250);
   border: 0;
@@ -745,49 +824,36 @@ body {
   line-height: 1.62;
   padding: 6px 22px;
 }
-.photo__title__btn:hover, .photo__title__btn:focus {
+.photo__btn:hover, .photo__btn:focus {
   background-color: #2196f3;
   border: 0;
   border-radius: 4px;
   color: #fff;
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
-.photo__title__list2 {
+.photo__list2 {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.photo__title__link2 {
+.photo__link2 {
   flex-basis: calc((100% - 60px) / 3);
 }
-@media screen and (min-width: 480px) {
-  .photo__title__link2 {
-    width: 450px;
-    height: 404px;
-    flex-shrink: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .photo__title__link2 {
-    width: 354px;
-    height: 440px;
-    flex-shrink: 0;
-  }
-}
-.photo__title__link2:focus .photo__title__link2:hover {
+.photo__link2:focus .photo__link2:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
-.photo__title__link2:focus .photo__title__link2:hover .overlay {
+.photo__link2:focus .photo__link2:hover .overlay {
   opacity: 1;
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.photo__title__img {
+.photo__img {
   width: 100%;
 }
-.photo .overlay {
+
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -801,7 +867,7 @@ body {
   transition-duration: 2500ms;
   transition-delay: 0;
 }
-.photo .overlay__text {
+.overlay__text {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
@@ -809,11 +875,13 @@ body {
   letter-spacing: 0.54px;
   width: 322px;
 }
-.photo .box-icon {
+
+.box-icon {
   position: relative;
   overflow: hidden;
 }
-.photo .box-icon:hover .overlay {
+
+.box-icon:hover .overlay {
   opacity: 1;
   transform: translate(0);
   transition: transform 250ms;
