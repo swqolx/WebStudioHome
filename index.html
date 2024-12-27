@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
   <body>
@@ -28,9 +28,9 @@
           ><span class="header__web">Web</span>Studio</a
         >
         <button data-modal-header-open class="header__button" type="button">
-<svg class="header__menu">
-  <use href="./images/symbol-defs.svg#icon-menu"></use>
-</svg>
+          <svg class="header__menu">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
         </button>
         <nav class="header__nav">
           <ul class="header__list">
@@ -38,23 +38,31 @@
               <a class="header__item current" href="./index.html">Студія</a>
             </li>
             <li class="header__link">
-              <a class="header__item  " href="./pages/portfolio.html">Портфоліо</a>
+              <a class="header__item" href="./pages/portfolio.html"
+                >Портфоліо</a
+              >
             </li>
-            <li class="header__link"><a class="header__item" href="#">Контакти</a></li>
+            <li class="header__link">
+              <a class="header__item" href="#">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="header__list2">
           <li class="header-link2">
-              <a class="header__item2" href="mailto:info@devstudio.com"
-              > <svg class="header__icon header__svg">
-              <use href="./images/symbol-defs.svg#icon-poshta"></use>
-            </svg> <span class="header-span">info@devstudio.com</span></a>
+            <a class="header__item2" href="mailto:info@devstudio.com">
+              <svg class="header__icon header__svg">
+                <use href="./images/symbol-defs.svg#icon-poshta"></use>
+              </svg>
+              <span class="header-span">info@devstudio.com</span></a
+            >
           </li>
           <li class="header__link2">
             <a class="header__item2" href="tel:+380961111111"
               ><svg class="header__icon">
-              <use href="./images/symbol-defs.svg#icon-phone"></use>
-            </svg> <span class="header__span"> +38 096 111 11 11</span></a>
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              <span class="header__span"> +38 096 111 11 11</span></a
+            >
           </li>
         </ul>
         <div data-header-modal class="menu is-hidden">
@@ -77,10 +85,14 @@
           <div class="menu__position">
             <ul class="menu__list-contact">
               <li class="menu__item-contact">
-                <a href="tel:+380961111111" class="menu__link-contact">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="menu__link-contact"
+                  >+38 096 111 11 11</a
+                >
               </li>
               <li class="menu__item-contact">
-                <a href="mailto:info@devstudio.com" class="menu__link-contact">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="menu__link-contact"
+                  >info@devstudio.com</a
+                >
               </li>
             </ul>
             <ul class="menu__list-social">
@@ -103,14 +115,14 @@
     </header>
     <main class="main">
       <!-- Ефективні рішення для вашого бізнес-->
-       <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__btn" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section> 
+      </section>
       <!-- наші переваги -->
       <section class="advant">
         <div class="container">
@@ -144,7 +156,7 @@
             </li>
           </ul>
         </div>
-        </section>
+      </section>
       <!-- Чим ми займаємось? -->
       <section class="affairs">
         <div class="container">
@@ -152,7 +164,13 @@
           <ul class="affairs__list">
             <li class="affairs__item">
               <picture>
-                <source srcset="./images/desktop/comp-desktop@2x.webp 2x, ./images/desktop/comp-desktop@1x.webp 1x " media="(min-width: 1200px)">
+                <source
+                  srcset="
+                    ./images/desktop/comp-desktop@2x.webp 2x,
+                    ./images/desktop/comp-desktop@1x.webp 1x
+                  "
+                  media="(min-width: 1200px)"
+                />
               </picture>
               <img
                 src="./images/dekstop.jpg"
@@ -165,7 +183,13 @@
             </li>
             <li class="affairs__item">
               <picture>
-                <source srcset="./images/desktop/telefon-desktop@2x.webp 2x, ./images/desktop/telefon-desktop@1x.webp 1x" media="(min-width: 768px)">
+                <source
+                  srcset="
+                    ./images/desktop/telefon-desktop@2x.webp 2x,
+                    ./images/desktop/telefon-desktop@1x.webp 1x
+                  "
+                  media="(min-width: 768px)"
+                />
               </picture>
               <img
                 src="./images/phone.jpg"
@@ -178,7 +202,13 @@
             </li>
             <li class="affairs__item">
               <picture>
-                <source srcset="./images/desktop/dizain-desktop@2x.webp 2x, ./images/desktop/dizain-desktop@1x.webp 1x" media="(max-width: 767px)">
+                <source
+                  srcset="
+                    ./images/desktop/dizain-desktop@2x.webp 2x,
+                    ./images/desktop/dizain-desktop@1x.webp 1x
+                  "
+                  media="(max-width: 767px)"
+                />
               </picture>
               <img
                 src="./images/plunshet.jpg"
@@ -199,9 +229,27 @@
           <ul class="team__list">
             <li class="team__item">
               <picture>
-                <source srcset="./images/desktop/igor-desktop@2x.webp 2x, ./images/desktop/igor-desktop@1x.webp 1x" media="(min-width: 1200px)" >
-                <source srcset="./images/tablet/igor-tablet@2x.webp 2x, ./images/tablet/igor-tablet@1x.webp 1x" media="(min-width: 768px)" >
-                <source srcset="./images/mobile/igor-mobile@2x.webp 2x, ./images/mobile/igor-mobile@1x.webp 1x" media="(max-width: 767px)">
+                <source
+                  srcset="
+                    ./images/desktop/igor-desktop@2x.webp 2x,
+                    ./images/desktop/igor-desktop@1x.webp 1x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/igor-tablet@2x.webp 2x,
+                    ./images/tablet/igor-tablet@1x.webp 1x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/igor-mobile@2x.webp 2x,
+                    ./images/mobile/igor-mobile@1x.webp 1x
+                  "
+                  media="(max-width: 767px)"
+                />
               </picture>
               <img src="./images/igor.jpg" alt="igor" class="team__img" />
               <div class="team__wrap">
@@ -211,7 +259,9 @@
                   <li class="team__itm">
                     <a href="" class="team__link">
                       <svg class="team__icon">
-                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -225,14 +275,18 @@
                   <li class="team__itm">
                     <a href="" class="team__link">
                       <svg class="team__icon">
-                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team__itm">
                     <a href="" class="team__link">
                       <svg class="team__icon">
-                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -241,9 +295,27 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/desktop/olga-desktop@2x.webp 2x, ./images/desktop/olga-desktop@1x.webp 1x" media="(min-width: 1200px)">
-                <source srcset="./images/tablet/olga-tablet@2x.webp 2x, ./images/tablet/olga-tablet@1x.webp 1x" media="(min-width: 768px)">
-                <source srcset="./images/mobile/olga-mobile@2x.webp 2x, ./images/mobile/olga-mobile@1x.webp 1x" media="(max-width: 767px)">
+                <source
+                  srcset="
+                    ./images/desktop/olga-desktop@2x.webp 2x,
+                    ./images/desktop/olga-desktop@1x.webp 1x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/olga-tablet@2x.webp 2x,
+                    ./images/tablet/olga-tablet@1x.webp 1x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/olga-mobile@2x.webp 2x,
+                    ./images/mobile/olga-mobile@1x.webp 1x
+                  "
+                  media="(max-width: 767px)"
+                />
               </picture>
               <img src="./images/olga.jpg" alt="olha" class="team__img" />
               <div class="team__wrap">
@@ -253,7 +325,9 @@
                   <li class="team__itm">
                     <a href="" class="team__link">
                       <svg class="team__icon">
-                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -267,14 +341,18 @@
                   <li class="team__itm">
                     <a href="" class="team__link">
                       <svg class="team__icon">
-                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team__itm">
                     <a href="" class="team__link">
                       <svg class="team__icon">
-                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -283,9 +361,18 @@
             </li>
             <li class="team__item">
               <picture>
-                <source src="./images/desktop/mukola-desktop@2.webp 2x, ./images/desktop/mukola-desktop@1x.webp 1x " media="(min-width: 1200px)">
-                <source src="./images/tablet/mukola-tablet@2x.webp 2x, ./images/tablet/mukola-tablet@1x.webp 1x" media="(min-width: 768px)">
-                <source src="./images/mobile/mukola-mobile@2x.webp 2x, ./images/mobile/mukola-mobile@1x.webp 1x" media="(max-width: 767px)">
+                <source
+                  src="./images/desktop/mukola-desktop@2.webp 2x, ./images/desktop/mukola-desktop@1x.webp 1x "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  src="./images/tablet/mukola-tablet@2x.webp 2x, ./images/tablet/mukola-tablet@1x.webp 1x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  src="./images/mobile/mukola-mobile@2x.webp 2x, ./images/mobile/mukola-mobile@1x.webp 1x"
+                  media="(max-width: 767px)"
+                />
               </picture>
               <img src="./images/mykola.jpg" alt="mukola" class="team__img" />
               <div class="team__wrap">
@@ -295,7 +382,9 @@
                   <li class="team__itm">
                     <a href="" class="team__link">
                       <svg class="team__icon">
-                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -309,14 +398,18 @@
                   <li class="team__itm">
                     <a href="" class="team__link">
                       <svg class="team__icon">
-                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team__itm">
                     <a href="" class="team__link">
                       <svg class="team__icon">
-                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -332,7 +425,9 @@
                   <li class="team__itm">
                     <a href="" class="team__link">
                       <svg class="team__icon">
-                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -346,14 +441,18 @@
                   <li class="team__itm">
                     <a href="" class="team__link">
                       <svg class="team__icon">
-                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team__itm">
                     <a href="" class="team__link">
                       <svg class="team__icon">
-                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -415,7 +514,7 @@
       </section>
     </main>
     <!-- Футер -->
-     <footer class="footer">
+    <footer class="footer">
       <div class="container footer__box">
         <div class="footer__wraper">
           <a class="footer__logo" href="/index.html"
@@ -494,20 +593,24 @@
         <div class="div-form">
           <h3 class="footer__lab">Підпишіться на розсилку</h3>
           <form class="footer__form">
-              <input type="email" class="footer__inp" required placeholder="E-mail">
-           <div class="footer__button">
-            <button type="submit" class="footer__btn">
-              Підписатися
-              <svg class="footer__icon">
-                <use href="./images/symbol-defs.svg#icon-telegram">
-                </use>
-              </svg>
-            </button>
-           </div>
+            <input
+              type="email"
+              class="footer__inp"
+              required
+              placeholder="E-mail"
+            />
+            <div class="footer__button">
+              <button type="submit" class="footer__btn">
+                Підписатися
+                <svg class="footer__icon">
+                  <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
-    </footer> 
+    </footer>
     <!-- Модальне вікно -->
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -567,8 +670,8 @@
     <script src="./js/modaljs"></script>
     <script src="./js/menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
