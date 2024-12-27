@@ -33,19 +33,19 @@
     }
 
     &:first-child::before {
-      background-image: url(/images/antenna.png);
+      background-image: url(./.././../images/antenna.png);
     }
 
     &:nth-child(2)::before {
-      background-image: url(/images/clock.png);
+      background-image: url(./.././../images/clock.png);
     }
 
     &:nth-child(3)::before {
-      background-image: url(/images/diagram.png);
+      background-image: url(./.././../images/diagram.png);
     }
 
     &:last-child::before {
-      background-image: url(/images/astronaut.png);
+      background-image: url(./.././../images/astronaut.png);
     }
   }
 
