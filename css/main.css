@@ -551,7 +551,7 @@ body {
 .menu__close {
   width: 40px;
   height: 40px;
-  fill: #212121;
+  fill: red;
 }
 .menu__item:first-child {
   margin-bottom: 36px;
