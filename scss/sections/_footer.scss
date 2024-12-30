@@ -31,6 +31,7 @@
     
     &__adress{
       font-style: normal;
+     
     }
     
     &__maps {
@@ -46,6 +47,10 @@
     
     &__list {
       margin-top: 9px;
+
+      @media  screen and (min-width: 1200px) {
+        text-align: start;
+      }
     }
     
     &__link {
@@ -71,9 +76,14 @@
       /* margin-left: 93px; */
       // padding-bottom: 19px;
       flex-direction: column;
+      align-items: flex-end;
       @media screen and (min-width: 1200px){
         flex-direction: row;
         gap: 12px;
+        
+      }
+      @media screen and (max-width: 1199px){
+        align-items: center;
       }
     }
     
@@ -157,10 +167,18 @@ flex-shrink: 0;
   }
   
  .foot{
+
   &__box {
     margin-left: auto;
     margin-right: auto;
-    text-align: center
+    text-align: center;
+
+    @media screen and (max-width:1199px){
+      margin-left: 233px;
+    }
+@media screen and (max-width: 767px){
+  margin: auto;
+}
    } 
    
    &__title {
@@ -171,12 +189,17 @@ flex-shrink: 0;
    letter-spacing: 0.42px;
    text-transform: uppercase;
    margin-bottom: 20px;
+
+   @media  screen and (min-width: 1200px) {
+    text-align: start;
+  }
    }
    
    &__list {
      display: flex;
      gap: 10px;
      align-items: center;
+     
    }
    
    &__item {
