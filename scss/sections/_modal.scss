@@ -1,174 +1,190 @@
-// .backdrop {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-//   opacity: 1;
-//   transition: opacity 300ms, pointer-events 300ms;
-// }
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  opacity: 1;
+  transition: opacity 300ms, pointer-events 300ms;
+}
 
-// .is-hidden {
-//   opacity: 0;
-//   pointer-events: none;
-// }
-// .is-hidden .modal {
-//   transform: translate(-200px, 150px) rotate(0deg);
-//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
-// .modal {
-//   padding: 40px;
-//   background-color: $studio-color;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%) rotate(360deg);
-//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.is-hidden .modal {
+  transform: translate(-200px, 150px) rotate(0deg);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+  padding: 40px;
+  background-color: $studio-color;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(360deg);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-//   &__btn {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     border-radius: 50%;
-//     background-color: transparent;
-//     padding: 6px;
-//     position: absolute;
-//     top: 14px;
-//     right: 14px;
-//     border: 1px solid $border-color;
-//   }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 603px;
+}
 
-//   &__btn:hover,
-//   &__btn:focus {
-//     .btn-svg {
-//       fill: $web-color;
-//       transition-property: fill;
-//       transition-duration: 250ms;
-//       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//       transition-delay: 0;
-//     }
-//   }
 
-//   &__title {
-//     color: $text-color;
-//     font-size: 20px;
-//     font-weight: 700;
-//     line-height: 1.15;
-//     letter-spacing: 0.6px;
-//     text-align: center;
-//     margin-bottom: 12px;
-//   }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 6px;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    border: 1px solid $border-color;
+  }
 
-//   &__lab {
-//     color: $accent-color;
-//     font-size: 12px;
-//     font-weight: 400;
-//     line-height: 1.16;
-//     letter-spacing: 0.12px;
-//     border: none;
-//   }
+  &__btn:hover,
+  &__btn:focus {
+    .btn-svg {
+      fill: $web-color;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0;
+    }
+  }
 
-//   &__inp {
-//     display: block;
-//     width: 448px;
-//     height: 40px;
-//     border-radius: 4px;
-//     border: 1px solid $border-color;
-//     padding: 12px 12px 12px 42px;
-//     margin-bottom: 10px;
-//     margin-top: 4px;
-//     outline: none;
-//   }
+  &__title {
+    color: $text-color;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.6px;
+    text-align: center;
+    margin-bottom: 12px;
 
-//   &__coment {
-//     display: block;
-//     width: 448px;
-//     height: 120px;
-//     border-radius: 4px;
-//     border-color: $border-color;
-//     padding: 12px 16px;
-//     margin-bottom: 25px;
-//     resize: none;
-//     margin-top: 4px;
-//     outline: none;
-//   }
+    
+    @media screen and (min-width: 1200px) {
+        width: auto;
+    }
+  }
 
-//   &__box {
-//     position: relative;
-//   }
+  &__lab {
+    color: $accent-color;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.12px;
+    border: none;
+  }
 
-//   &__inp:hover,
-//   &__inp:focus {
-//     border-color: $web-color;
-//     transition-property: border-color;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//     transition-delay: 0;
-//   }
+  &__inp {
+    display: block;
+    width: 448px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid $border-color;
+    padding: 12px 12px 12px 42px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    outline: none;
 
-//   &__inp:hover + &__svg,
-//   &__inp:focus + &__svg {
-//     fill: $web-color;
-//     transition-property: fill;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//     transition-delay: 0;
-//   }
+    @media screen and (min-width: 1200px) {
+        width: 448px;
+        height: 40px;
+    }
+  }
 
-//   &__svg {
-//     width: 18px;
-//     height: 18px;
-//     top: 53%;
-//     left: 12px;
-//     position: absolute;
-//   }
+  &__coment {
+    display: block;
+    width: 448px;
+    height: 120px;
+    border-radius: 4px;
+    border-color: $border-color;
+    padding: 12px 16px;
+    margin-bottom: 25px;
+    resize: none;
+    margin-top: 4px;
+    outline: none;
+  }
 
-//   &__us {
-//     width: 18px;
-//     height: 18px;
-//   }
+  &__box {
+    position: relative;
+  }
 
-//   &__chek {
-//     width: 16px;
-//     height: 16px;
-//     margin-right: 8px;
-//   }
+  &__inp:hover,
+  &__inp:focus {
+    border-color: $web-color;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+  }
 
-//   &__check {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     margin-bottom: 34px;
-//     color: $accent-color;
-//     font-size: 14px;
-//     font-weight: 400;
-//     line-height: 1.7;
-//     letter-spacing: 0.42px;
-//   }
+  &__inp:hover + &__svg,
+  &__inp:focus + &__svg {
+    fill: $web-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+  }
 
-//   &__link2 {
-//     color: $web-color;
-//     font-size: 14px;
-//     font-weight: 400;
-//     line-height: 1.7;
-//     letter-spacing: 0.42px;
-//     text-decoration-line: underline;
-//     margin-left: 3px;
-//   }
+  &__svg {
+    width: 18px;
+    height: 18px;
+    top: 53%;
+    left: 12px;
+    position: absolute;
+  }
 
-//   &__btn2 {
-//     line-height: 1.8;
-//     padding: 10px 53px;
-//     @include style-button;
-//   }
-// }
+  &__us {
+    width: 18px;
+    height: 18px;
+  }
 
-// .btn-svg {
-//   width: 18px;
-//   height: 18px;
-// }
+  &__chek {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
 
-// .btn {
-//   text-align: center;
-// }
+  &__check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 34px;
+    color: $accent-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.42px;
+  }
+
+  &__link2 {
+    color: $web-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.42px;
+    text-decoration-line: underline;
+    margin-left: 3px;
+  }
+
+  &__btn2 {
+    line-height: 1.8;
+    padding: 10px 53px;
+    @include style-button;
+  }
+}
+
+.btn-svg {
+  width: 18px;
+  height: 18px;
+}
+
+.btn {
+  text-align: center;
+}
